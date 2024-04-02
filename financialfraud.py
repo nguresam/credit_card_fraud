@@ -1,9 +1,9 @@
 import numpy as np
 import streamlit as st
-import joblib as jb
+import joblib
 
 # Load the saved model
-model = jb.load('my_fraud_detection_model.sav')
+model = joblib.load('my_fraud_detection_model.sav')
 
 # Function to make predictions
 def predict_fraud(transaction_data):
